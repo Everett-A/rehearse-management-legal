@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Rehearsal Manager</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:             #ffffff;
+      --surface:        #f8f9fa;
+      --border:         #e5e7eb;
+      --text:           #111827;
+      --text-secondary: #6b7280;
+      --link:           #1d4ed8;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: 'SF Mono', 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:             #0f172a;
+        --surface:        #1e293b;
+        --border:         #334155;
+        --text:           #f1f5f9;
+        --text-secondary: #94a3b8;
+        --link:           #60a5fa;
+      }
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .app-name {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    nav { display: flex; gap: 28px; }
+
+    nav a {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.15s;
+    }
+
+    nav a:hover  { color: var(--text); }
+    nav a.active { color: var(--text); border-bottom: 2px solid var(--text); padding-bottom: 2px; }
+
+    /* ── Document header ── */
+    .doc-header {
+      padding: 52px 0 36px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-family: var(--font-mono);
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--text);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .meta {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* ── Content ── */
+    .content section { margin-bottom: 44px; }
+
+    h2 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 24px 0 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 14px;
+      line-height: 1.75;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    strong { font-weight: 600; }
+
+    .callout {
+      background: var(--surface);
+      border-left: 3px solid var(--border);
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .callout p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 0 48px;
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer p {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--text-secondary);
+      margin-bottom: 0;
+    }
+
+    footer a {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--text-secondary);
+    }
+
+    footer a:hover { color: var(--text); text-decoration: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      header { flex-direction: column; align-items: flex-start; }
+      nav { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <a href="index.html" class="app-name">REHEARSAL MANAGER</a>
+      <nav>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-use.html" class="active">Terms of Use</a>
+      </nav>
+    </header>
+
+    <div class="doc-header">
+      <h1>Terms of Use</h1>
+      <p class="meta">
+        Effective Date: April 25, 2026<br />
+        Last Updated: April 25, 2026<br />
+        Developer: Everett Randolph Anton
+      </p>
+    </div>
+
+    <div class="content">
+
+      <section>
+        <h2>1 · Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, accessing, or using the Rehearsal Manager mobile
+          application ("the App"), you agree to be bound by these Terms of Use ("Terms").
+          If you do not agree to these Terms, you must not use the App.
+        </p>
+        <p>
+          These Terms constitute a legally binding agreement between you and Everett
+          Randolph Anton ("Developer," "we," "us," or "our"), an individual developer
+          based in Colorado, United States of America.
+        </p>
+      </section>
+
+      <section>
+        <h2>2 · Description of Service</h2>
+        <p>
+          Rehearsal Manager is a scheduling, attendance, conflict management, and
+          communication tool designed for use by performing arts organizations. The App
+          enables production managers to create and manage rehearsal and set build
+          schedules, track member attendance, review and approve member availability
+          conflicts, manage live show states, and communicate with cast and crew.
+          Members can view their schedule, submit availability conflicts, and receive
+          communications within their assigned production(s).
+        </p>
+        <p>
+          The App is intended for use exclusively by individuals who have been granted
+          access by an authorized production manager. It is not available for
+          self-registration by the general public.
+        </p>
+      </section>
+
+      <section>
+        <h2>3 · Eligibility</h2>
+        <p>
+          To use the App, you must:
+        </p>
+        <ul>
+          <li>Be at least 13 years of age;</li>
+          <li>Have received an invitation or access credentials from an authorized
+              production manager;</li>
+          <li>Have the legal capacity to enter into a binding agreement; and</li>
+          <li>Comply with all applicable laws and regulations in your jurisdiction.</li>
+        </ul>
+        <p>
+          By using the App, you represent and warrant that you meet all of the above
+          requirements.
+        </p>
+      </section>
+
+      <section>
+        <h2>4 · User Accounts</h2>
+        <p>
+          Access to the App requires an account created with a valid email address and
+          password. You are solely responsible for:
+        </p>
+        <ul>
+          <li>Maintaining the confidentiality of your account credentials;</li>
+          <li>All activity that occurs under your account, whether or not authorized by you; and</li>
+          <li>Notifying us immediately at
+              <a href="mailto:privacy@everettanton.com">privacy@everettanton.com</a>
+              if you suspect unauthorized access to or use of your account.</li>
+        </ul>
+        <p>
+          You may not share your account credentials with another person or allow another
+          person to use your account to access the App.
+        </p>
+      </section>
+
+      <section>
+        <h2>5 · User Roles and Permissions</h2>
+        <p>
+          The App assigns users one of two primary roles within each production:
+        </p>
+
+        <h3>Managers</h3>
+        <p>
+          Managers are authorized to: create and administer productions; add and remove
+          members; create and edit rehearsal and set build schedules; designate called
+          members; review, approve, and reject member conflict submissions; enter
+          conflicts on behalf of members; record attendance; manage live show states;
+          and send announcements to production members.
+        </p>
+
+        <h3>Members</h3>
+        <p>
+          Members are authorized to: view production schedules and rehearsal calls
+          applicable to them; submit, update, and remove their own availability
+          conflicts; view their submitted conflicts and approval status; receive
+          announcements and push notifications; and view their own attendance records.
+        </p>
+
+        <p>
+          You agree to use the App only within the scope of the role assigned to you.
+          Attempting to access functionality or data beyond your assigned role is a
+          violation of these Terms.
+        </p>
+      </section>
+
+      <section>
+        <h2>6 · Acceptable Use</h2>
+        <p>You agree that you will not use the App to:</p>
+        <ul>
+          <li>Violate any applicable federal, state, local, or international law or regulation;</li>
+          <li>Submit false, misleading, or fraudulent information, including false conflict submissions;</li>
+          <li>Impersonate any person or entity, or misrepresent your affiliation with a production;</li>
+          <li>Attempt to gain unauthorized access to any part of the App, its servers, its databases,
+              or any systems or networks connected to the App;</li>
+          <li>Interfere with, disrupt, or degrade the performance or availability of the App
+              or its underlying infrastructure;</li>
+          <li>Reverse-engineer, decompile, disassemble, or otherwise attempt to derive the
+              source code of the App;</li>
+          <li>Use automated scripts, bots, or other tools to access or interact with the App;</li>
+          <li>Harass, threaten, intimidate, or harm any other user; or</li>
+          <li>Use the App for any purpose other than its intended scheduling and communications
+              functions.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7 · Content and Data</h2>
+        <p>
+          You retain ownership of any personal information and content you submit to the
+          App (such as conflict explanations or announcement messages). By submitting
+          content, you grant us a limited, non-exclusive license to store and display
+          that content within the App as necessary to provide the service.
+        </p>
+        <p>
+          You are responsible for the accuracy of any information you submit. We are not
+          liable for scheduling decisions made in reliance on information submitted by
+          users. Scheduling information displayed in the App is intended as a convenience
+          and should be verified directly with production management for critical
+          decisions.
+        </p>
+        <p>
+          We reserve the right to remove or modify any content that violates these Terms.
+        </p>
+      </section>
+
+      <section>
+        <h2>8 · Intellectual Property</h2>
+        <p>
+          The App, including its design, source code, graphics, user interface, and all
+          other content created by the Developer, is the exclusive property of Everett
+          Randolph Anton and is protected by applicable copyright, trademark, and other
+          intellectual property laws of the United States.
+        </p>
+        <p>
+          These Terms grant you a limited, personal, non-exclusive, non-transferable,
+          revocable license to use the App on your personal device solely for its
+          intended purpose. You may not copy, modify, distribute, sublicense, sell,
+          or create derivative works based on the App or any part of it.
+        </p>
+      </section>
+
+      <section>
+        <h2>9 · Third-Party Services</h2>
+        <p>
+          The App relies on the following third-party services to function:
+        </p>
+        <ul>
+          <li><strong>Google Firebase</strong> — for authentication and cloud data storage</li>
+          <li><strong>Expo</strong> — for push notification delivery</li>
+          <li><strong>Apple App Store</strong> — for distribution on iOS devices</li>
+        </ul>
+        <p>
+          Your use of these services is also subject to their respective terms of service
+          and privacy policies. We are not responsible for the practices of these
+          third parties.
+        </p>
+      </section>
+
+      <section>
+        <h2>10 · Disclaimers</h2>
+        <p class="uppercase">
+          THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES
+          OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES
+          OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR
+          NON-INFRINGEMENT.
+        </p>
+        <p class="uppercase">
+          WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE,
+          OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. WE DO NOT WARRANT THE
+          ACCURACY, COMPLETENESS, OR RELIABILITY OF ANY INFORMATION DISPLAYED IN THE
+          APP, INCLUDING SCHEDULE DATA ENTERED BY OTHER USERS.
+        </p>
+        <p class="uppercase">
+          YOUR USE OF THE APP IS AT YOUR SOLE RISK. SOME JURISDICTIONS DO NOT ALLOW
+          THE EXCLUSION OF CERTAIN WARRANTIES, SO SOME OF THE ABOVE EXCLUSIONS MAY
+          NOT APPLY TO YOU.
+        </p>
+      </section>
+
+      <section>
+        <h2>11 · Limitation of Liability</h2>
+        <p class="uppercase">
+          TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVERETT RANDOLPH ANTON
+          SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
+          EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS,
+          LOSS OF DATA, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR
+          RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF ADVISED OF THE
+          POSSIBILITY OF SUCH DAMAGES.
+        </p>
+        <p class="uppercase">
+          IN NO EVENT SHALL THE DEVELOPER'S TOTAL AGGREGATE LIABILITY TO YOU FOR ALL
+          CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS OR THE APP EXCEED ONE HUNDRED
+          U.S. DOLLARS ($100.00).
+        </p>
+      </section>
+
+      <section>
+        <h2>12 · Indemnification</h2>
+        <p>
+          You agree to indemnify, defend, and hold harmless Everett Randolph Anton from
+          and against any claims, liabilities, damages, losses, costs, and expenses
+          (including reasonable attorneys' fees) arising out of or related to: (a) your
+          use of or access to the App; (b) your violation of these Terms; (c) your
+          violation of any applicable law or regulation; or (d) any content or information
+          you submit through the App.
+        </p>
+      </section>
+
+      <section>
+        <h2>13 · Termination</h2>
+        <p>
+          We reserve the right, in our sole discretion, to suspend or terminate your
+          access to the App at any time, with or without notice, for any reason,
+          including but not limited to violation of these Terms, conduct that we determine
+          to be harmful to other users or the App, or cessation of the App's operation.
+        </p>
+        <p>
+          Production managers may remove members from a production at any time, which
+          will revoke that member's access to that production's data.
+        </p>
+        <p>
+          Upon termination, your right to use the App ceases immediately. Provisions of
+          these Terms that by their nature should survive termination (including sections
+          on Intellectual Property, Disclaimers, Limitation of Liability, Indemnification,
+          and Governing Law) shall survive.
+        </p>
+      </section>
+
+      <section>
+        <h2>14 · Governing Law and Dispute Resolution</h2>
+        <p>
+          These Terms are governed by and construed in accordance with the laws of the
+          State of Colorado, United States of America, without regard to its conflict of
+          law principles.
+        </p>
+        <p>
+          Any dispute arising out of or relating to these Terms or your use of the App
+          shall be resolved exclusively in the state or federal courts located in
+          Colorado, and you consent to the personal jurisdiction of such courts.
+        </p>
+      </section>
+
+      <section>
+        <h2>15 · Changes to These Terms</h2>
+        <p>
+          We reserve the right to modify these Terms at any time. When we make material
+          changes, we will update the "Last Updated" date at the top of this page and,
+          where appropriate, provide notice through the App or by email.
+        </p>
+        <p>
+          Your continued use of the App after any such changes constitutes your acceptance
+          of the revised Terms. If you do not agree to the revised Terms, you must stop
+          using the App.
+        </p>
+      </section>
+
+      <section>
+        <h2>16 · General Provisions</h2>
+        <p>
+          <strong>Entire Agreement.</strong> These Terms, together with our
+          <a href="privacy-policy.html">Privacy Policy</a>, constitute the entire
+          agreement between you and the Developer with respect to the App and supersede
+          all prior agreements and understandings.
+        </p>
+        <p>
+          <strong>Severability.</strong> If any provision of these Terms is found to be
+          unenforceable or invalid, that provision will be modified to the minimum extent
+          necessary to make it enforceable, and the remaining provisions will continue in
+          full force and effect.
+        </p>
+        <p>
+          <strong>Waiver.</strong> Our failure to enforce any right or provision of these
+          Terms will not be considered a waiver of that right or provision.
+        </p>
+        <p>
+          <strong>Assignment.</strong> You may not assign or transfer your rights or
+          obligations under these Terms without our prior written consent. We may assign
+          our rights and obligations without restriction.
+        </p>
+      </section>
+
+      <section>
+        <h2>17 · Contact</h2>
+        <p>
+          If you have questions about these Terms, please contact:
+        </p>
+        <div class="callout">
+          <p>
+            <strong>Everett Randolph Anton</strong><br />
+            Colorado, United States of America<br />
+            <a href="mailto:privacy@everettanton.com">privacy@everettanton.com</a>
+          </p>
+        </div>
+      </section>
+
+    </div><!-- /.content -->
+
+    <footer>
+      <p>© 2026 Everett Randolph Anton · Rehearsal Manager</p>
+      <a href="mailto:privacy@everettanton.com">privacy@everettanton.com</a>
+    </footer>
+
+  </div><!-- /.page -->
+</body>
+</html>
